@@ -6,6 +6,8 @@ import { styles } from '../theme/appTheme'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { DrawerScreenProps } from '@react-navigation/drawer';
 
+import Icon from 'react-native-vector-icons/Ionicons';
+
 
 //interface Props extends StackScreenProps<any, any>{};
 interface Props extends DrawerScreenProps<any,any>{};
@@ -50,6 +52,9 @@ export const Pagina1Screen = ( { navigation }: Props) => {
             nombre: 'Pedro'
           })}
         >
+          <Text>
+          <Icon name="man" size={30} color="#900" />
+          </Text>
           <Text style={
             styles.botonGrandeTexto
           }>Pedro</Text>
@@ -63,9 +68,13 @@ export const Pagina1Screen = ( { navigation }: Props) => {
             nombre: 'Maria'
           })}
         >
+          <Text>
+          <Icon name="woman" size={30} color="#900" />
+          </Text>
           <Text style={
             styles.botonGrandeTexto
           }>Maria</Text>
+
         </TouchableOpacity>
 
          </View>
